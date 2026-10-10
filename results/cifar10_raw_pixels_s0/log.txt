@@ -1,0 +1,2 @@
+[run] cifar10_raw_pixels_s0 on cuda
+[done] cifar10_raw_pixels_s0

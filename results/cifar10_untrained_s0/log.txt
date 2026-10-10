@@ -1,0 +1,2 @@
+[run] cifar10_untrained_s0 on cuda
+[done] cifar10_untrained_s0

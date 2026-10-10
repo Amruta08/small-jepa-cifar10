@@ -1,0 +1,54 @@
+{
+ "args": {
+  "dataset": "cifar10",
+  "data_root": "./data",
+  "out_dir": "runs",
+  "epochs": 50,
+  "eval_epochs": "25,50",
+  "batch_size": 256,
+  "lr": 0.001,
+  "min_lr": 1e-06,
+  "warmup_epochs": 5,
+  "wd_start": 0.04,
+  "wd_end": 0.4,
+  "ema_start": 0.996,
+  "ema_end": 1.0,
+  "patch": 4,
+  "dim": 192,
+  "depth": 6,
+  "heads": 3,
+  "pred_dim": 96,
+  "pred_depth": 4,
+  "pred_heads": 3,
+  "loss": "l2",
+  "grad_clip": 1.0,
+  "train_subset": 0,
+  "n_val": 5000,
+  "split_seed": 0,
+  "knn_k": 20,
+  "device": "auto",
+  "cond": "untrained",
+  "seed": 0
+ },
+ "evals": [
+  {
+   "epoch": 0,
+   "linear_0.01": 0.2777999937534332,
+   "val_linear_0.01": 0.27799999713897705,
+   "linear_0.1": 0.3317999839782715,
+   "val_linear_0.1": 0.32420000433921814,
+   "linear_1.0": 0.34630000591278076,
+   "val_linear_1.0": 0.3391999900341034,
+   "knn": 0.2847,
+   "spread": 0.027219533920288086,
+   "erank": 3.301579475402832,
+   "erank_centered": 11.436270713806152
+  }
+ ],
+ "history": [],
+ "env": {
+  "torch": "2.14.0+cu130",
+  "python": "3.12.14",
+  "device": "NVIDIA GeForce RTX 3090"
+ }
+}
