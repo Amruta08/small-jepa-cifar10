@@ -94,11 +94,3 @@ paper/               LaTeX source of the paper, figures and table-generation scr
 Following I-JEPA: the target encoder sees the full image and is an exponential moving average of the context encoder (momentum 0.996 to 1.0); the context encoder sees only context tokens; a narrow predictor with positional mask tokens predicts the layer-normalised target features; fixed 2D sin-cos position embeddings; multi-block masking (4 target blocks, scale 0.15 to 0.2, one context block, scale 0.85 to 1.0, overlap removed).
 
 Different from the original: a much smaller ViT (patch 4, width 192, depth 6), AdamW with warm-up and cosine decay, batch size 256, crop-and-flip augmentation instead of random-resized-crop, gradient clipping at 1.0, and 50 epochs on 32×32 images. This is a small-scale study of the recipe, not a reproduction of the original results.
-
-## Citation
-
-If you use this code, please cite the paper: *[add title, authors and link when available]*.
-
-## License
-
-[Add a LICENSE file, for example MIT, through GitHub's "Add file" menu.]
